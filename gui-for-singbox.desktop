@@ -2,7 +2,7 @@
 Name=gui-for-singbox
 Comment=GUI for SingBox
 Exec=/opt/gui-for-singbox/GUI.for.SingBox
-Icon=gui-for-singbox
+Icon=/opt/gui-for-singbox/icon/gui-for-singbox.png
 Type=Application
 StartupNotify=true
 Categories=Network;Utility;

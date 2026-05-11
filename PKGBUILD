@@ -31,6 +31,6 @@ package() {
     install -dm755 "${pkgdir}/opt/${pkgname}"
     bsdtar -xf "${_pkgname}-linux-amd64.zip" -C "${pkgdir}/opt/${pkgname}"
     chmod 755 "${pkgdir}/opt/${pkgname}/${_pkgname}"
-    install -Dm644 "appicon.png" "${pkgdir}/usr/share/pixmaps/${pkgname}.png"
+    install -Dm644 "appicon.png" "${pkgdir}/opt/${pkgname}/icon/${pkgname}.png"
     install -Dm644 "${pkgname}.desktop" "${pkgdir}/usr/share/applications/${pkgname}.desktop"
 }
