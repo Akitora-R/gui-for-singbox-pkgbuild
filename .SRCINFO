@@ -1,0 +1,22 @@
+pkgbase = gui-for-singbox
+	pkgdesc = GUI for SingBox
+	pkgver = 1.24.0
+	pkgrel = 1
+	url = https://github.com/GUI-for-Cores/GUI.for.SingBox
+	install = gui-for-singbox.install
+	arch = x86_64
+	license = GPL3
+	depends = glibc
+	depends = webkit2gtk-4.1
+	provides = gui-for-singbox
+	conflicts = gui-for-singbox
+	source = https://github.com/GUI-for-Cores/GUI.for.SingBox/releases/download/v1.24.0/GUI.for.SingBox-linux-amd64.zip
+	source = gui-for-singbox.desktop
+	source = https://raw.githubusercontent.com/GUI-for-Cores/GUI.for.SingBox/main/build/appicon.png
+	source = gui-for-singbox.install
+	sha256sums = SKIP
+	sha256sums = 7c4b032bc966c20889bb87a328afa34d4ae191d2171c084ba99f959aa6429c8b
+	sha256sums = 08257d0d21c76a56e48e38105460927293a452ddc6b0b62db401bf5b5b9b7adf
+	sha256sums = f20042b6b20131c6b8ae40b5ed321b9707f6755d5fe06c7474922d753c476c24
+
+pkgname = gui-for-singbox

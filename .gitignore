@@ -1,0 +1,22 @@
+# makepkg build and packaging directories
+src/
+pkg/
+
+# built packages
+*.pkg.tar
+*.pkg.tar.*
+
+# source packages
+*.src.tar
+*.src.tar.*
+
+# package checksums
+*.pkg.tar.*.sig
+
+# downloaded source files (binary zip, icon from GitHub)
+GUI.for.SingBox-*.zip
+appicon.png
+
+# vim swap files
+*.swp
+*.swo

@@ -1,0 +1,41 @@
+post_install() {
+    pkgname='gui-for-singbox'
+    case "${LANG}" in
+    zh_CN*)
+        printf '\033[1;31m请手动更改目录 /opt/%s 的所有者和所属组 \033[1;32mchown -R YOUR_USER:YOUR_GROUP /opt/%s\033[0m\n' \
+            "${pkgname}" "${pkgname}"
+        ;;
+    zh_*)
+        printf '\033[1;31m请手动更改目录 /opt/%s 的所有者和所属组 \033[1;32mchown -R YOUR_USER:YOUR_GROUP /opt/%s\033[0m\n' \
+            "${pkgname}" "${pkgname}"
+        ;;
+    fr_*)
+        printf '\033[1;31mVeuillez changer manuellement le propriétaire et le groupe du répertoire /opt/%s \033[1;32mchown -R YOUR_USER:YOUR_GROUP /opt/%s\033[0m\n' \
+            "${pkgname}" "${pkgname}"
+        ;;
+    de_*)
+        printf '\033[1;31mBitte ändern Sie manuell den Besitzer und die Gruppe des Verzeichnisses /opt/%s \033[1;32mchown -R YOUR_USER:YOUR_GROUP /opt/%s\033[0m\n' \
+            "${pkgname}" "${pkgname}"
+        ;;
+    es_*)
+        printf '\033[1;31mCambie manualmente el propietario y el grupo del directorio /opt/%s \033[1;32mchown -R YOUR_USER:YOUR_GROUP /opt/%s\033[0m\n' \
+            "${pkgname}" "${pkgname}"
+        ;;
+    it_*)
+        printf '\033[1;31mCambiare manualmente il proprietario e il gruppo della directory /opt/%s \033[1;32mchown -R YOUR_USER:YOUR_GROUP /opt/%s\033[0m\n' \
+            "${pkgname}" "${pkgname}"
+        ;;
+    ja_*)
+        printf '\033[1;31mディレクトリ /opt/%s の所有者とグループを手動で変更してください \033[1;32mchown -R YOUR_USER:YOUR_GROUP /opt/%s\033[0m\n' \
+            "${pkgname}" "${pkgname}"
+        ;;
+    ko_*)
+        printf '\033[1;31m디렉토리 /opt/%s 의 소유자와 그룹을 수동으로 변경하십시오 \033[1;32mchown -R YOUR_USER:YOUR_GROUP /opt/%s\033[0m\n' \
+            "${pkgname}" "${pkgname}"
+        ;;
+    *)
+        printf '\033[1;31mPlease manually change the owner and group of /opt/%s \033[1;32mchown -R YOUR_USER:YOUR_GROUP /opt/%s\033[0m\n' \
+            "${pkgname}" "${pkgname}"
+        ;;
+    esac
+}
